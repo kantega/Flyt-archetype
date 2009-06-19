@@ -15,7 +15,7 @@
     <version>1.0</version>
 
     <scm>
-        <connection>scm:svn:https://opensource.kantega.no/svn/openaksess-archetype/trunk</connection>
+        <connection>scm:svn:https://opensource.kantega.no/svn/openaksess-archetype/tags/openaksess-project-1.0</connection>
     </scm>
 
     <build>
