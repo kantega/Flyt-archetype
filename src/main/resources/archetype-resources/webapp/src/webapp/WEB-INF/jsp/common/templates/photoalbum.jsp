@@ -19,8 +19,6 @@
     </script>
 </kantega:section>
 
-mvn archetype:generate -DarchetypeGroupId=org.kantega.archetypes -DarchetypeArtifactId=openaksess-project -DarchetypeVersion=1.6 -DarchetypeRepository=http://opensource.kantega.no/nexus/content/groups/public/
-
 <kantega:section id="content">
     <h1><aksess:getattribute name="title"/></h1>
 
