@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <templateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                        xsi:schemaLocation="http://www.kantega.no http://www.kantega.no/aksess/aksess-templateconfig.xsd"
                        xmlns="http://www.kantega.no">
@@ -77,7 +77,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="6" id="Search">
-            <name>Søk</name>
+            <name>SÃ¸k</name>
             <templateFile>search.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Frontpage"/>
@@ -176,7 +176,7 @@
 
         <displayTemplate databaseId="2" id="Article">
             <name>Standard underside</name>
-            <description>Ordinær side med tekst og bilder.</description>
+            <description>OrdinÃ¦r side med tekst og bilder.</description>
             <view>/WEB-INF/jsp/common/templates/article.jsp</view>
             <contentTemplate id="Article"/>
         </displayTemplate>
@@ -193,21 +193,21 @@
 
         <displayTemplate databaseId="4" id="News article">
             <name>Nyhet</name>
-            <description>Standard nyhetsartikkel. Publiseres under nyhetsarkivet, men benyttes til uttrekk på forsida.</description>
+            <description>Standard nyhetsartikkel. Publiseres under nyhetsarkivet, men benyttes til uttrekk pÃ¥ forsida.</description>
             <view>/WEB-INF/jsp/common/templates/news-article.jsp</view>
             <contentTemplate id="News article"/>
         </displayTemplate>
 
         <displayTemplate databaseId="5" id="Mail subscription" allowMultipleUsages="false">
             <name>E-postabonnement</name>
-            <description>Mal som lar brukeren abonnere på oppdateringer i deler av nettstedsstrukturen.</description>
+            <description>Mal som lar brukeren abonnere pÃ¥ oppdateringer i deler av nettstedsstrukturen.</description>
             <view>/WEB-INF/jsp/common/templates/subscription.jsp</view>
             <contentTemplate id="Mail subscription"/>
         </displayTemplate>
 
         <displayTemplate databaseId="6" id="Search" allowMultipleUsages="false">
-            <name>Søk</name>
-            <description>Side for søk og visning av søkeresultat.</description>
+            <name>SÃ¸k</name>
+            <description>Side for sÃ¸k og visning av sÃ¸keresultat.</description>
             <view>/WEB-INF/jsp/common/templates/search.jsp</view>
             <contentTemplate id="Search"/>
             <controllers>
@@ -238,7 +238,7 @@
 
         <displayTemplate databaseId="12" id="List">
             <name>Liste</name>
-            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare titlen.</description>
+            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge Ã¥ vise tittelen og ingressen fra hver underside eller bare titlen.</description>
             <view>/WEB-INF/jsp/common/templates/liste.jsp</view>
             <contentTemplate id="List"/>
         </displayTemplate>
@@ -257,7 +257,7 @@
             <name>Skjema</name>
             <description>
                 Denne malen lar deg bygge opp et skjema med felter, slik som tekst, radioknapper, nedtrekkslister osv.
-                Når en besøkende fyller ut skjemaet sendes det en e-post til en adresse du kan angi i malen.
+                NÃ¥r en besÃ¸kende fyller ut skjemaet sendes det en e-post til en adresse du kan angi i malen.
             </description>
             <view>/WEB-INF/jsp/common/templates/form.jsp</view>
             <contentTemplate id="Form"/>
