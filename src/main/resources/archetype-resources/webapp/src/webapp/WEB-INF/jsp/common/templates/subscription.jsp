@@ -30,12 +30,18 @@
 
         <c:otherwise>
 
-            <aksess:exists name="lead paragraph">
-                <p class="leadParagraph">
-                    <aksess:getattribute name="lead paragraph"/>
-                </p>
-            </aksess:exists>
-
+            <c:choose>
+                <c:when test="${invalidEmail}">
+                    <div class="leadParagraph subscriptionError"><kantega:label key="subscription.email.invalid" bundle="site"/></div>
+                </c:when>
+                <c:otherwise>
+                    <aksess:exists name="lead paragraph">
+                        <div class="leadParagraph">
+                            <aksess:getattribute name="lead paragraph"/>
+                        </div>
+                    </aksess:exists>
+                </c:otherwise>
+            </c:choose>
 
             <form method="post" action="<aksess:getattribute name="url"/>">
                 <fieldset class="alternatives">
