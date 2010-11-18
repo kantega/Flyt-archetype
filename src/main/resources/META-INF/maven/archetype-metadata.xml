@@ -8,40 +8,26 @@
         <requiredProperty key="databasePassword"/>
         <requiredProperty key="aksessVersion"/>
     </requiredProperties>
-    <modules>
-        <module id="core" dir="core" name="core">
-            <fileSets>
-                <fileSet encoding="UTF-8" filtered="true" packaged="true">
-                    <directory>src/main/java</directory>
-                    <includes>
-                        <include>**/*.java</include>
-                    </includes>
-                </fileSet>
-            </fileSets>
-        </module>
-        <module id="webapp" dir="webapp" name="webapp">
-            <fileSets>
-                <fileSet encoding="UTF-8">
-                    <directory></directory>
-                    <includes>
-                        <include>**/*.jsp</include>
-                        <include>**/*.js</include>
-                        <include>**/*.jjs</include>
-                        <include>**/*.css</include>
-                        <include>**/*.gif</include>
-                        <include>**/*.png</include>
-                    </includes>
-                </fileSet>
-                <fileSet encoding="UTF-8" filtered="true">
-                    <directory></directory>
-                    <includes>
-                        <include>**/*.conf</include>
-                        <include>**/*.properties</include>
-                        <include>**/*.xml</include>
-                        <include>**/*.vm</include>
-                    </includes>
-                </fileSet>
-            </fileSets>
-        </module>
-    </modules>
+    <fileSets>
+        <fileSet encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>**/*.jsp</include>
+                <include>**/*.js</include>
+                <include>**/*.jjs</include>
+                <include>**/*.css</include>
+                <include>**/*.gif</include>
+                <include>**/*.png</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+            <directory></directory>
+            <includes>
+                <include>**/*.conf</include>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+                <include>**/*.vm</include>
+            </includes>
+        </fileSet>
+    </fileSets>
 </archetype-descriptor>
