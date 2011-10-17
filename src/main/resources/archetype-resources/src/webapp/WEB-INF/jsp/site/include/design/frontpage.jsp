@@ -49,7 +49,7 @@
                 </p>
             </aksess:exists>
 
-            <aksess:getattribute name="content" />
+            <kantega:getsection id="content" />
         </div>
         <div style="clear: both"></div>
     </div>
