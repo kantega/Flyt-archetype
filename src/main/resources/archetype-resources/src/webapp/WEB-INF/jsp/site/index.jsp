@@ -17,7 +17,7 @@
             <p class="leadParagraph">
                 <aksess:getattribute name="description" collection="news"/>
                 <aksess:link collection="news">Les</aksess:link>
-            </div>
+            </p>
         </div>
     </aksess:getcollection>
     </div>
