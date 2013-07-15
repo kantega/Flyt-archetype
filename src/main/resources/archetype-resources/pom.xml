@@ -11,7 +11,7 @@
 
     <properties>
         <aksess.version>${aksessVersion}</aksess.version>
-        <aksess-plugin.version>1.23</aksess-plugin.version>
+        <aksess-plugin.version>1.32</aksess-plugin.version>
     </properties>
 
     <repositories>
