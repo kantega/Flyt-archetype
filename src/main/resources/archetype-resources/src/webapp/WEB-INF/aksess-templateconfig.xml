@@ -4,7 +4,7 @@
                        xmlns="http://www.kantega.no">
 
     <sites>
-        <site databaseId="1" id="site" alias="/site/">
+        <site databaseId="1" id="site" alias="/site/" isDefault="true">
             <name>Nettsted</name>
         </site>
     </sites>
