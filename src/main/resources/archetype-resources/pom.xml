@@ -2,6 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.kantega.openaksess</groupId>
+        <artifactId>openaksess-project-parent</artifactId>
+        <version>${aksessVersion}</version>
+    </parent>
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
@@ -11,7 +16,7 @@
 
     <properties>
         <aksess.version>${aksessVersion}</aksess.version>
-        <aksess-plugin.version>1.32</aksess-plugin.version>
+        <aksess-plugin.version>1.35</aksess-plugin.version>
     </properties>
 
     <repositories>
@@ -66,48 +71,61 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.kantega.openaksess</groupId>
                 <artifactId>aksess-maven-plugin</artifactId>
                 <version>${aksess-plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
                     <aksessVersion>${aksess.version}</aksessVersion>
+                    <projectWebXml>${basedir}/src/main/webapp/WEB-INF/web.xml</projectWebXml>
+                    <srcDir>${basedir}/src/main/webapp</srcDir>
+                    <aksessTemplateConfigXml>${basedir}/src/main/webapp/WEB-INF/aksess-templateconfig.xml</aksessTemplateConfigXml>
                 </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1-beta-1</version>
-                <configuration>
-                    <warSourceDirectory>${basedir}/src/webapp</warSourceDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.simplericity.jettyconsole</groupId>
-                <artifactId>jetty-console-maven-plugin</artifactId>
-                <version>1.34</version>
                 <executions>
                     <execution>
+                        <phase>generate-sources</phase>
                         <goals>
-                            <goal>createconsole</goal>
+                            <goal>generateAksessTemplateConfig</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <additionalDependencies>
-                        <additionalDependency>
-                            <artifactId>jetty-console-jsp-plugin</artifactId>
-                        </additionalDependency>
-                    </additionalDependencies>
-                    <backgroundImage>${basedir}/src/main/resources/defaultBackgroundImage.png</backgroundImage>
-                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>jetty-console</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.simplericity.jettyconsole</groupId>
+                        <artifactId>jetty-console-maven-plugin</artifactId>
+                        <version>1.48</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>createconsole</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <additionalDependencies>
+                                <additionalDependency>
+                                    <artifactId>jetty-console-jsp-plugin</artifactId>
+                                </additionalDependency>
+                            </additionalDependencies>
+                            <backgroundImage>${basedir}/src/main/resources/defaultBackgroundImage.png</backgroundImage>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
 </project>
