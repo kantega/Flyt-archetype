@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="project-parent">
+    <requiredProperties>
+        <requiredProperty key="databaseType"/>
+        <requiredProperty key="databaseHost"/>
+        <requiredProperty key="databaseName"/>
+        <requiredProperty key="databaseUsername"/>
+        <requiredProperty key="databasePassword"/>
+        <requiredProperty key="aksessVersion"/>
+    </requiredProperties>
+    <fileSets>
+        <fileSet encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>**/*.jsp</include>
+                <include>**/*.js</include>
+                <include>**/*.jjs</include>
+                <include>**/*.css</include>
+                <include>**/*.gif</include>
+                <include>**/*.png</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+            <directory></directory>
+            <includes>
+                <include>**/*.conf</include>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+                <include>**/*.vm</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
