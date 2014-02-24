@@ -14,8 +14,6 @@
         <resource>src/404.jsp</resource>
         <resource>src/500.jsp</resource>
         <resource>src/bitmaps/common/img_poll.gif</resource>
-        <resource>src/bitmaps/common/img_link_right.gif</resource>
-        <resource>src/bitmaps/common/img_link_left.gif</resource>
         <resource>src/bitmaps/common/mandatory.png</resource>
         <resource>src/bitmaps/site/backgroundFooter.png</resource>
         <resource>src/bitmaps/site/backgroundMenuLink.png</resource>
@@ -31,7 +29,6 @@
         <resource>src/WEB-INF/jsp/common/templates/article.jsp</resource>
         <resource>src/WEB-INF/jsp/common/templates/form.jsp</resource>
         <resource>src/WEB-INF/jsp/common/templates/poll.jsp</resource>
-        <resource>src/WEB-INF/jsp/common/templates/photoalbum.jsp</resource>
         <resource>src/WEB-INF/jsp/common/templates/include/poll.jsp</resource>
         <resource>src/WEB-INF/jsp/common/templates/list.jsp</resource>
         <resource>src/WEB-INF/jsp/common/templates/mini/poll.jsp</resource>
@@ -52,7 +49,6 @@
         <resource>src/WEB-INF/templates/content/list.xml</resource>
         <resource>src/WEB-INF/templates/content/news-archive.xml</resource>
         <resource>src/WEB-INF/templates/content/poll.xml</resource>
-        <resource>src/WEB-INF/templates/content/photoalbum.xml</resource>
         <resource>src/WEB-INF/templates/content/search.xml</resource>
         <resource>src/WEB-INF/templates/content/sitemap.xml</resource>
         <resource>src/WEB-INF/templates/content/subscription.xml</resource>

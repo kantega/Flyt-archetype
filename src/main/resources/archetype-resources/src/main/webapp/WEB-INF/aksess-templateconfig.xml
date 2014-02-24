@@ -92,15 +92,6 @@
             </allowedParentTemplates>
         </contentTemplate>
 
-        <contentTemplate databaseId="8" id="Photo album">
-            <name>Fotoalbum</name>
-            <templateFile>photoalbum.xml</templateFile>
-            <allowedParentTemplates>
-                <contentTemplate id="Article"/>
-                <contentTemplate id="Frontpage"/>
-            </allowedParentTemplates>
-        </contentTemplate>
-
         <contentTemplate databaseId="9" id="Link" contentType="LINK">
             <name>Lenke</name>
             <templateFile>link.xml</templateFile>
@@ -223,13 +214,6 @@
             <description>Mal for publisering av sidekart.</description>
             <view>/WEB-INF/jsp/common/templates/sitemap.jsp</view>
             <contentTemplate id="Site map"/>
-        </displayTemplate>
-
-        <displayTemplate databaseId="8" id="Photo album">
-            <name>Fotoalbum</name>
-            <description>Mal hvor du kan velge en folder fra multimediearkivet som skal vises som fotogalleri</description>
-            <view>/WEB-INF/jsp/common/templates/photoalbum.jsp</view>
-            <contentTemplate id="Photo album"/>
         </displayTemplate>
 
         <displayTemplate databaseId="11" id="Poll">

@@ -16,7 +16,7 @@
 }
 
 * {
-    font-family: "Segoe UI", "Lucida Grande", "Lucida Sans Unicode", sans-serif, Verdana, Arial;
+    font-family: "Segoe UI", "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, sans-serif;
     color: #333;
     font-size: 13px;
 }
@@ -165,23 +165,7 @@ hr {
 #content .image .caption {
     font-size: .9em;
 }
-.photoalbum #content .index table td {
-    border-color: #E0E0E0;
-}
-.photoalbum #content .index table td.previous,
-.photoalbum #content .index table td.next {
-    background: #E5E5E5;
-}
-.photoalbum #content .index table td.previous img,
-.photoalbum #content .index table td.next img {
-    background: #FFF;
-}
-.photoalbum #content .navigation {
-    padding: 1em 0;
-}
-.photoalbum #content .navigation a.forrige {
-    margin-right: 1em;
-}
+
 .search #content form {
     margin-top: 1em;
 }
