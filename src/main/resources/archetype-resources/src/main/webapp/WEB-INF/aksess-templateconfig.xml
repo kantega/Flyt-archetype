@@ -110,15 +110,6 @@
             </allowedParentTemplates>
         </contentTemplate>
 
-        <contentTemplate databaseId="11" id="Poll">
-            <name>Avstemming</name>
-            <templateFile>poll.xml</templateFile>
-            <allowedParentTemplates>
-                <contentTemplate id="Article"/>
-                <contentTemplate id="Frontpage"/>
-            </allowedParentTemplates>
-        </contentTemplate>
-
         <contentTemplate databaseId="12" id="List">
             <name>Liste</name>
             <templateFile>list.xml</templateFile>
@@ -214,13 +205,6 @@
             <description>Mal for publisering av sidekart.</description>
             <view>/WEB-INF/jsp/common/templates/sitemap.jsp</view>
             <contentTemplate id="Site map"/>
-        </displayTemplate>
-
-        <displayTemplate databaseId="11" id="Poll">
-            <name>Avstemming</name>
-            <description>Mal for publisering av en enkel, flervalgs avstemming.</description>
-            <view>/WEB-INF/jsp/common/templates/poll.jsp</view>
-            <contentTemplate id="Poll"/>
         </displayTemplate>
 
         <displayTemplate databaseId="12" id="List">
