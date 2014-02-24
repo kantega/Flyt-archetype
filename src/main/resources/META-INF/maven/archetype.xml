@@ -5,7 +5,6 @@
         <resource>pom.xml</resource>
         <resource>src/conf/aksess-webapp.conf</resource>
         <resource>src/WEB-INF/config/aksess-project.conf</resource>
-        <resource>src/main/resources/defaultBackgroundImage.png</resource>
         <resource>src/main/resources/boston_city_flow.png</resource>
         <resource>src/main/resources/costa_rican_frog.png</resource>
         <resource>src/main/resources/my_logo.png</resource>
