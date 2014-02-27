@@ -15,7 +15,6 @@
     <name>${artifactId}</name>
 
     <properties>
-        <aksess-plugin.version>2.0</aksess-plugin.version>
         <jetty.version>8.1.14.v20131031</jetty.version>
     </properties>
 
@@ -57,7 +56,7 @@
             <plugin>
                 <groupId>org.kantega.openaksess</groupId>
                 <artifactId>aksess-maven-plugin</artifactId>
-                <version>${aksess-plugin.version}</version>
+                <version>${aksess-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
