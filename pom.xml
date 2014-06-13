@@ -12,10 +12,10 @@
     <artifactId>openaksess-project</artifactId>
     <packaging>maven-archetype</packaging>
     <name>OpenAksess Project Archetype</name>
-    <version>2.3</version>
+    <version>2.4-SNAPSHOT</version>
 
     <scm>
-        <connection>scm:svn:https://opensource.kantega.no/svn/openaksess-archetype/tags/openaksess-project-2.3</connection>
+        <connection>scm:svn:https://opensource.kantega.no/svn/openaksess-archetype/trunk</connection>
     </scm>
 
     <build>
