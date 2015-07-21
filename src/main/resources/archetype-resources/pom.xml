@@ -62,11 +62,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <aksessTemplateConfigXml>src/main/webapp/WEB-INF/aksess-templateconfig.xml</aksessTemplateConfigXml>
-                    <!-- Set from CI or command line -->
-                    <revision>TODO</revision>
-                </configuration>
             </plugin>
 
         </plugins>
